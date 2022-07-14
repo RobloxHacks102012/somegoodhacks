@@ -1,0 +1,312 @@
+local stopif = {
+stand1 = {Body = "TWAU", move1 = {"Gun","RoadRoller"}},
+stand2 = {Body = "D4C", move2 = {"CloneSelf"}},
+stand3 = {Body = "CW", move2 = {"CloneSelf"}},
+stand4 = {Body = "BBB", move1 = {"Encouragement"}, move2 = {"AgingGas","FutureSight","Tree","CloneSelf"}},
+stand5 = {Body = "HY", move1 = {"Encouragement"}, move2 = {"AgingGas","FutureSight","Tree","CloneSelf"}},
+stand6 = {Body = "CB", Head = "CB", move1 = {"Gun"}, move2 = {"AbsoluteDefense","CloneSelf"}},
+stand7 = {Body = "TA", move1 = {"Glide","RoadRoller","Harpoon"}, move2 = {"NailBullet"}},
+stand8 = {Body = "S&W", move1 = {"FrictionBubble","Harpoon","RoadRoller"}, move2 = {"SwordBarrage","BubbleBomb"}},
+stand9 = {Body = "WOU", move1 = {"Harpoon","Bearing","RoadRoller"}, move2 = {"SwordBarrage"}},
+stand10 = {Body = "SK", move2 = {"Sizzle"}},
+stand11 = {Body = "BW", move1 = {"VirusCapsule"}, move2 = {"PHVirus","CloneSelf","AgingGas","LightningBolt","Tree","FutureSight"}},
+stand115 = {Body = "BW", move2 = {"CloneSelf"}},
+stand12 = {Body = "STW"},
+stand13 = {Body = "TheWorld", move1 = {"RoadRoller"}},
+stand135 = {Body = "TheWorld", move1 = {"Gun","Block","StandJump","Harpoon"},move2 = {"KnifeThrow","CloneSelf"}},
+stand14 = {Body = "SPP",move1 = {"Suck","RoadRoller"},move2 = {"TimeStopMovement","GroundSlam"}},
+stand145 = {Body = "SPP",move1 = {"Harpoon","Suck","RoadRoller","Gun","Block","Bearing"},move2 = {"TimeStopMovement","FutureSight"}},
+stand15 = {Body = "GE",move2 = {"Tree"}},
+stand16 = {Body = "WR",move2 = {"LightningBolt"}},
+stand17 = {Body = "MIH",move1 = {"Gun"},move2 = {"KnifeThrow","TimeStopMovement"}},
+stand18 = {Body = "SF",move1 = {"Bearing"},move2 = {"HermitGrab"}},
+stand19 = {Body = "TGD",move1 = {"Gun"},move2 = {"AgingGas"}},
+stand20 = {Body = "SilverChariot",move1 = {"Harpoon"},move2 = {"SwordBarrage"}},
+stand21 = {Body = "BS",move1 = {"Gun"},move2 = {"SwordBarrage"}},
+stand22 = {Body = "BC",move1 = {"Gun"}},
+stand23 = {Body = "RHCP",move2 = {"LightningBolt"}},
+stand24 = {Body = "KQ",move1 = {"PrimaryBomb"}},
+stand25 = {Body = "PH",move1 = {"VirusCapsule"}},
+stand26 = {Head = "KC",move2 = {"FutureSight"}},
+stand27 = {Body = "KC",move2 = {"FutureSight","TimeStopMovement"}},
+stand28 = {Body = "SpiceGirl",move1 = {"RoadRoller","SofteningMode","Bearing","Harpoon"},move2 = {"SwordBarrage"}},
+stand29 = {Body = "MBB",move2 = {"CloneSelf"}},
+stand30 = {Body = "CrazyDiamond",move1 = {"HealingMode"},move2 = {"Tree"}},
+stand31 = {Body = "EA",move1 = {"LifePunch"},move2 = {"Sizzle"}},
+stand32 = {Body = "HD",move1 = {"LifePunch","Harpoon"},move2 = {"SwordBarrage"}},
+stand33 = {Body = "WhiteSnake", move1 = {"Gun"},move2 = {"AcidSpit"}},
+stand34 = {Body = "Cream", move1 = {"Harpoon","RoadRoller","Gun","Bearing"},move2 = {"KnifeThrow","GroundSlam","Tree","CloneSelf","FutureSight"}},
+stand35 = {Body = "SP6", move1 = {"Harpoon"}, move2 = {"FutureSight","Tree","CloneSelf","TimeStopMovement","GroundSlam"}},
+stand36 = {Body = "ALICE",Head = "ALICE", move1 = {"FrictionBubble","RoadRoller","VirusCapsule"},move2 = {"BubbleBomb","Tree","CloneSelf","FutureSight"}},
+stand37 = {Body = "SoftMachine", move1 = {"Harpoon","SofteningMode","Bearing","RoadRoller","Gun"},move2 = {"SwordBarrage"}},
+stand38 = {Body = "BunnyD4C", move1 = {"Gun","StandJump"},move2 = {"CloneSelf","GroundSlam"}},
+stand39 = {Body = "HG", move1 = {"EmeraldSplash"},move2 = {"CloneSelf","Tree","LightningBolt","FutureSight","AgingGas"}},
+stand40 = {Body = "ROB", move2 = {"LightningBolt"}},
+stand41 = {Body = "SP", move1 = {"Bearing"},move2 = {"TimeStopMovement","FutureSight","Tree"}},
+stand42 = {Body = "JJF", move1 = {"Suck","Bearing"},move2 = {"Repulse"}},
+stand43 = {Body = "GP", move1 = {"VirusCapsule"}},
+stand44 = {Body = "WR", move1 = {"Suck","Fireball"}, move2 = {"PHVirus","LightningBolt"}},
+stand45 = {Body = "KQ", move2 = {"BubbleBomb"}},
+stand46 = {Body = "GE", move1 = {"LifePunch"}},
+stand47 = {Body = "PH", move2 = {"PHVirus"}},
+stand48 = {Body = "StickyFingers", move1 = {"Glide"},move2 = {"HermitGrab"}},
+stand49 = {Body = "MagiciansRed", move1 = {"Fireball"},move2 = {"FireAnkh","FireBreath"}},
+stand50 = {Body = "Hand", move1 = {"Bearing","Harpoon","RoadRoller"}, move2 = {"Scrape"}},
+stand51 = {Head = "AT", move2 = {"FutureSight"}},
+stand52 = {Body = "REDQUEEN", Head = "REDQUEEN", move1 = {"Fireball"}, move2 = {"FireBreath"}},
+stand53 = {Body = "C-MB", move2 = {"Repulse"}},
+stand505 = {move1 = {"RoadRoller"},move2 = {"KnifeThrow"}},
+stand515 = {move1 = {"VirusCapsule"},move2 = {"CloneSelf"}},
+}
+
+_G.item = "Stand Arrow" -- Part # DISC/Stand Arrow
+_G.standfarm = true
+
+-- Don't change anything unless you know what you're doing.
+
+local Stand = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local Body = Instance.new("TextLabel")
+local Cash = Instance.new("TextLabel")
+local Name = Instance.new("TextLabel")
+local Head = Instance.new("TextLabel")
+local Ability1 = Instance.new("TextLabel")
+local Ability2 = Instance.new("TextLabel")
+local Ability3 = Instance.new("TextLabel")
+local Type = Instance.new("TextLabel")
+local Fail = Instance.new("TextLabel")
+local Sub = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
+local UIGradient_2 = Instance.new("UIGradient")
+local Data = game:GetService("Players").LocalPlayer.Data
+
+
+Stand.Name = "Stand"
+Stand.Parent = game:WaitForChild("CoreGui")
+Stand.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = Frame_2
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0,0,0)
+Frame.Size = UDim2.new(0, 170, 0, 220)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(4, 4, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(38, 38, 38))}
+UIGradient.Rotation = -89
+UIGradient.Parent = Frame
+
+Frame_2.Parent = Stand
+Frame_2.Draggable = true
+Frame_2.Selectable = true
+Frame_2.Active = true
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BorderSizePixel = 3
+Frame_2.Position = UDim2.new(0.858292043, 0, 0.269938648, 0)
+Frame_2.Size = UDim2.new(0, 170, 0, 220)
+Frame_2.ZIndex = 0
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 136, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(12, 223, 255))}
+UIGradient_2.Parent = Frame_2
+
+Body.Name = "Body"
+Body.Parent = Frame
+Body.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Body.BackgroundTransparency = 1.000
+Body.BorderSizePixel = 0
+Body.Position = UDim2.new(0.05,0,0.2,0)
+Body.Text = "Body: "..tostring(game:GetService("Players").LocalPlayer.Data.StandBody.Value)
+Body.Size = UDim2.new(0, 149, 0, 21)
+Body.Font = Enum.Font.SourceSans
+Body.TextColor3 = Color3.fromRGB(203, 203, 203)
+Body.TextSize = 14.000
+Body.TextXAlignment = Enum.TextXAlignment.Left
+
+Cash.Name = "Cash"
+Cash.Parent = Frame
+Cash.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cash.BackgroundTransparency = 1.000
+Cash.BorderSizePixel = 0
+Cash.Position = UDim2.new(0.05,0,0.9,0)
+Cash.Size = UDim2.new(0, 149, 0, 21)
+Cash.Text = "Cash: "..tostring(game:GetService("Players").LocalPlayer.Data.Cash.Value)
+Cash.Font = Enum.Font.SourceSans
+Cash.TextColor3 = Color3.fromRGB(203, 203, 203)
+Cash.TextSize = 14.000
+Cash.TextXAlignment = Enum.TextXAlignment.Left
+
+Name.Name = "Name"
+Name.Parent = Frame
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.BorderSizePixel = 0
+Name.Position = UDim2.new(0.05,0,0,0)
+Name.Size = UDim2.new(0, 149, 0, 21)
+Name.Font = Enum.Font.SourceSans
+Name.Text = "Name: "..tostring(game:GetService("Players").LocalPlayer.Data.StandName.Value)
+Name.TextColor3 = Color3.fromRGB(203, 203, 203)
+Name.TextSize = 14.000
+Name.TextXAlignment = Enum.TextXAlignment.Left
+
+Head.Name = "Head"
+Head.Parent = Frame
+Head.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Head.BackgroundTransparency = 1.000
+Head.BorderSizePixel = 0
+Head.Position = UDim2.new(0.05,0,0.1,0)
+Head.Size = UDim2.new(0, 149, 0, 21)
+Head.Text = "Head: "..tostring(game:GetService("Players").LocalPlayer.Data.StandHead.Value)
+Head.Font = Enum.Font.SourceSans
+Head.TextColor3 = Color3.fromRGB(203, 203, 203)
+Head.TextSize = 14.000
+Head.TextXAlignment = Enum.TextXAlignment.Left
+
+Ability1.Name = "Ability1"
+Ability1.Parent = Frame
+Ability1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ability1.BackgroundTransparency = 1.000
+Ability1.BorderSizePixel = 0
+Ability1.Position = UDim2.new(0.05,0,0.3,0)
+Ability1.Size = UDim2.new(0, 149, 0, 21)
+Ability1.Text = "First Move: "..tostring(game:GetService("Players").LocalPlayer.Data.STPower1.Value)
+Ability1.Font = Enum.Font.SourceSans
+Ability1.TextColor3 = Color3.fromRGB(203, 203, 203)
+Ability1.TextSize = 14.000
+Ability1.TextXAlignment = Enum.TextXAlignment.Left
+
+Ability2.Name = "Ability2"
+Ability2.Parent = Frame
+Ability2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ability2.BackgroundTransparency = 1.000
+Ability2.BorderSizePixel = 0
+Ability2.Position = UDim2.new(0.05,0,0.4,0)
+Ability2.Size = UDim2.new(0, 149, 0, 21)
+Ability2.Text = "Second Move: "..tostring(game:GetService("Players").LocalPlayer.Data.STPower2.Value)
+Ability2.Font = Enum.Font.SourceSans
+Ability2.TextColor3 = Color3.fromRGB(203, 203, 203)
+Ability2.TextSize = 14.000
+Ability2.TextXAlignment = Enum.TextXAlignment.Left
+
+Ability3.Name = "Ability3"
+Ability3.Parent = Frame
+Ability3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ability3.BackgroundTransparency = 1.000
+Ability3.BorderSizePixel = 0
+Ability3.Position = UDim2.new(0.05,0,0.5,0)
+Ability3.Size = UDim2.new(0, 149, 0, 21)
+Ability3.Text = "Third Move: "..tostring(game:GetService("Players").LocalPlayer.Data.STPower3.Value)
+Ability3.Font = Enum.Font.SourceSans
+Ability3.TextColor3 = Color3.fromRGB(203, 203, 203)
+Ability3.TextSize = 14.000
+Ability3.TextXAlignment = Enum.TextXAlignment.Left
+
+Type.Name = "Type"
+Type.Parent = Frame
+Type.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Type.BackgroundTransparency = 1.000
+Type.BorderSizePixel = 0
+Type.Position = UDim2.new(0.05,0,0.6,0)
+Type.Size = UDim2.new(0, 149, 0, 21)
+Type.Text = "Stand Type: "..tostring(game:GetService("Players").LocalPlayer.Data.StandType.Value)
+Type.Font = Enum.Font.SourceSans
+Type.TextColor3 = Color3.fromRGB(203, 203, 203)
+Type.TextSize = 14.000
+Type.TextXAlignment = Enum.TextXAlignment.Left
+
+Sub.Name = "SubType"
+Sub.Parent = Frame
+Sub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sub.BackgroundTransparency = 1.000
+Sub.BorderSizePixel = 0
+Sub.Position = UDim2.new(0.05,0,0.7,0)
+Sub.Size = UDim2.new(0, 149, 0, 21)
+Sub.Text = "Sub Type: "..tostring(game:GetService("Players").LocalPlayer.Data.StandSubtype.Value)
+Sub.Font = Enum.Font.SourceSans
+Sub.TextColor3 = Color3.fromRGB(203, 203, 203)
+Sub.TextSize = 14.000
+Sub.TextXAlignment = Enum.TextXAlignment.Left
+
+Fail.Name = "RequiemSuccess"
+Fail.Parent = Frame
+Fail.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fail.BackgroundTransparency = 1.000
+Fail.BorderSizePixel = 0
+Fail.Position = UDim2.new(0.05,0,0.8,0)
+Fail.Size = UDim2.new(0, 149, 0, 21)
+Fail.Text = "Requiem Body: "..tostring(game:GetService("Players").LocalPlayer.Data.RequiemStand.Value)
+Fail.Font = Enum.Font.SourceSans
+Fail.TextColor3 = Color3.fromRGB(203, 203, 203)
+Fail.TextSize = 14.000
+Fail.TextXAlignment = Enum.TextXAlignment.Left
+
+game:GetService("Players").LocalPlayer.Data.StandName.Changed:Connect(function()
+  Name.Text = "Name: "..tostring(game:GetService("Players").LocalPlayer.Data.StandName.Value)
+end)
+
+game:GetService("Players").LocalPlayer.Data.StandHead.Changed:Connect(function()
+  Head.Text = "Head: "..tostring(game:GetService("Players").LocalPlayer.Data.StandHead.Value)
+end)
+
+game:GetService("Players").LocalPlayer.Data.STPower1.Changed:Connect(function()
+  Ability1.Text = "First Move: "..tostring(game:GetService("Players").LocalPlayer.Data.STPower1.Value)
+end)
+
+game:GetService("Players").LocalPlayer.Data.STPower2.Changed:Connect(function()
+  Ability2.Text = "Second Move: "..tostring(game:GetService("Players").LocalPlayer.Data.STPower2.Value)
+end)
+
+game:GetService("Players").LocalPlayer.Data.STPower3.Changed:Connect(function()
+  Ability3.Text = "Third Move: "..tostring(game:GetService("Players").LocalPlayer.Data.STPower3.Value)
+end)
+
+game:GetService("Players").LocalPlayer.Data.StandType.Changed:Connect(function()
+  Type.Text = "Stand Type: "..tostring(game:GetService("Players").LocalPlayer.Data.StandType.Value)
+end)
+
+game:GetService("Players").LocalPlayer.Data.StandSubtype.Changed:Connect(function()
+  Sub.Text = "Sub Type: "..tostring(game:GetService("Players").LocalPlayer.Data.StandSubtype.Value)
+end)
+
+game:GetService("Players").LocalPlayer.Data.RequiemStand.Changed:Connect(function()
+  Fail.Text = "Requiem Body: "..tostring(game:GetService("Players").LocalPlayer.Data.RequiemStand.Value)
+end)
+
+game:GetService("Players").LocalPlayer.Data.StandBody.Changed:Connect(function()
+  Body.Text = "Body: "..tostring(game:GetService("Players").LocalPlayer.Data.StandBody.Value)
+end)
+
+game:GetService("Players").LocalPlayer.Data.Cash.Changed:Connect(function()
+  Cash.Text = "Cash: "..tostring(game:GetService("Players").LocalPlayer.Data.Cash.Value)
+end)
+
+local function standcheck()
+   for i,v in pairs(stopif) do
+       if (v["Head"] == nil or Data.StandHead.Value:find(v["Head"])) and (v["Body"] == nil or Data.StandBody.Value:find(v["Body"])) and (v["move1"] == nil or table.find(v["move1"],Data.STPower1.Value)) and (v["move2"] == nil or table.find(v["move2"],Data.STPower2.Value)) then
+           print("true")
+           return true
+       end
+   end
+   print("false")
+   return false
+end
+
+while true do
+  if _G.standfarm == true and not standcheck() then
+  if not game:GetService("Players").LocalPlayer.Data.Stand.Value and not standcheck() then
+fireclickdetector(game:GetService("Workspace").Purchasable[_G.item].ClickDetector)
+repeat wait() until game.Players.LocalPlayer.Backpack:FindFirstChild(_G.item)
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack[_G.item])
+repeat wait() until game.Players.LocalPlayer.Character:FindFirstChild(_G.item)
+game:GetService("ReplicatedStorage").Events.Event4:InvokeServer()
+elseif game:GetService("Players").LocalPlayer.Data.Stand.Value and not standcheck() then
+  fireclickdetector(game:GetService("Workspace").Purchasable["Rokakaka Fruit"].ClickDetector)
+repeat wait() until game.Players.LocalPlayer.Backpack:FindFirstChild("Rokakaka Fruit")
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Rokakaka Fruit"])
+repeat wait() until game.Players.LocalPlayer.Character:FindFirstChild("Rokakaka Fruit")
+game:GetService("ReplicatedStorage").Events.Event6:InvokeServer()
+end
+end
+wait(7)
+end
